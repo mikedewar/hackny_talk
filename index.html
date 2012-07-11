@@ -1,10 +1,23 @@
 <!DOCTYPE html>
+<head>
+    <script src="d3.v2.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+</script>
 
+<body>
 <meta charset="utf-8">
 <title>Measuring Attention at Bitly</title>
 
 <section>
     <h1>Measuring Attention <i>at</i><br/>bit.ly</h1>
+</section>
+
+<section>
+    <h1>
+        @mikedewar
+        <br />
+        <span style="font-size:35px">https://github.com/mikedewar/hackny_talk</span>
+    </h1>
 </section>
 
 <section>
@@ -19,22 +32,19 @@
     </figure>
 </section>
 
+<section>
+    <figure>
+        <img src="gray.png">
+        <figcaption>The 4th Paradigm</figcaption>
+    </figure>
+</section>
+
 
 <section>
     <figure>
         <img src="datascience.png">
     </figure>
 </section>
-
-<section>
-    <figure>
-        <img src="gray.png">
-    </figure>
-</section>
-
-<!--  -->
-
-
 
 <section>
     <figure>
@@ -47,17 +57,30 @@
     <figure>
         <img src="survey.jpg">
     </figure>
+    
 </section>
 
 <section>
-<div style="line-height:600px; text-align:center;">
-    <pre>curl -s developer.usa.gov/1usagov</pre>
-</div>
+    <h2>a click</h2>
+    <p>mdjkrngkjndkjfgn</p>        
+</section>
+
+<section>
+    <h1>many clicks</h1>
+        <pre style="text-align:center; margin-top:3em">curl -s developer.usa.gov/1usagov</pre>
+</section>
+
+<section id="histogram">
+
 </section>
 
 <section>
     <h2>Thanks</h2>
 </section>
+
+<script src="histogram.js"></script>
+
+</body>
 
 <!-- Your Style -->
 <!-- Define the style of your presentation -->
@@ -66,6 +89,20 @@
 <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic' rel='stylesheet'>
 
 <style>
+
+figcaption {
+    color: white;
+    text-align:center;
+    width:800px;
+    margin: 500px 0px 0px 0px;
+}
+ 
+  path {
+      stroke:black;
+      stroke-width:1px;
+      fill:none;
+  }
+
   html, .view body { background-color: black; counter-reset: slideidx; }
   body, .view section { background-color: white; border-radius: 12px }
   /* A section is a slide. It's size is 800x600, and this will never change */
@@ -92,6 +129,9 @@
     margin-top: 200px;
     text-align: center;
     font-size: 80px;
+  }
+  h2 {
+      margin-top:20px;
   }
   h3 {
     margin: 100px 0 50px 100px;
@@ -134,7 +174,6 @@
     width: 100%; height: 100%;
   }
   figcaption {
-    margin: 70px;
     font-size: 50px;
   }
 
